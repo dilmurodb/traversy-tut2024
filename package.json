@@ -1,0 +1,12 @@
+{
+  "name": "traversy-tut2024",
+  "version": "1.0.0",
+  "description": "Node.js tutorial Traversy Youtube 2024",
+  "license": "MIT",
+  "author": "Dilmurod Bukharov",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
