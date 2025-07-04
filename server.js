@@ -41,8 +41,10 @@ const server = http.createServer( async(req, res) => {
             throw new Error('Method not allowed');
         }
     } catch (error) {
-        res.writeHead(500, { 'Content-Type': 'text/plain'});
-        res.end('Server Error')
+        const notFoundPage = await fs.readFile(path.join(__dirname, 'public', 'notFound.html'));
+        res.writeHead(404, { 'Content-Type': 'text/html'});
+        res.write(notFoundPage)
+        res.end()
     }
 
     
